@@ -91,59 +91,109 @@
   <ItemGroup>
     <Compile Include="AcceptanceTest\AddDescrption.cs" />
     <Compile Include="AcceptanceTest\AddEducation.cs" />
-    <Compile Include="AcceptanceTest\AddLanguage.cs" />
-    <Compile Include="AcceptanceTest\SpecFlowFeature2.feature.cs">
+    <Compile Include="AcceptanceTest\AddingSameLanguageandSameLanguageLevel.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SpecFlowFeature2.feature</DependentUpon>
+      <DependentUpon>AddingSameLanguageandSameLanguageLevel.feature</DependentUpon>
+    </Compile>
+    <Compile Include="AcceptanceTest\AddingSameLanguageandSameLanguageLevelSteps.cs" />
+    <Compile Include="AcceptanceTest\AddingSameLanguageWithDifferntLanguageLevel.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddingSameLanguageWithDifferntLanguageLevel.feature</DependentUpon>
+    </Compile>
+    <Compile Include="AcceptanceTest\AddLanguage.cs" />
+    <Compile Include="AcceptanceTest\AddSkills.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddSkills.feature</DependentUpon>
     </Compile>
     <Compile Include="AcceptanceTest\AddingSkills.cs" />
-    <Compile Include="AcceptanceTest\SpecFlowFeature3.feature.cs">
+    <Compile Include="AcceptanceTest\AddEducation.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SpecFlowFeature3.feature</DependentUpon>
+      <DependentUpon>AddEducation.feature</DependentUpon>
     </Compile>
-    <Compile Include="AcceptanceTest\SpecFlowFeature4.feature.cs">
+    <Compile Include="AcceptanceTest\AddCertification.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SpecFlowFeature4.feature</DependentUpon>
+      <DependentUpon>AddCertification.feature</DependentUpon>
     </Compile>
     <Compile Include="AcceptanceTest\AddCertification.cs" />
-    <Compile Include="AcceptanceTest\SpecFlowFeature5.feature.cs">
+    <Compile Include="AcceptanceTest\AddDescription.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SpecFlowFeature5.feature</DependentUpon>
+      <DependentUpon>AddDescription.feature</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AcceptanceTest\SpecFlowFeature1.feature.cs">
+    <Compile Include="AcceptanceTest\DeleteingLanguage.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SpecFlowFeature1.feature</DependentUpon>
+      <DependentUpon>DeleteingLanguage.feature</DependentUpon>
+    </Compile>
+    <Compile Include="AcceptanceTest\DeleteingLanguageSteps.cs" />
+    <Compile Include="AcceptanceTest\EditLanguage.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditLanguage.feature</DependentUpon>
+    </Compile>
+    <Compile Include="AcceptanceTest\EditLanguageSteps.cs" />
+    <Compile Include="AcceptanceTest\AddingSameLanguageWithDifferntLanguageLevelSteps.cs" />
+    <Compile Include="AcceptanceTest\Languages.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Languages.feature</DependentUpon>
+    </Compile>
+    <Compile Include="AcceptanceTest\LanguagesSteps.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AcceptanceTest\AddLanguage.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddLanguage.feature</DependentUpon>
     </Compile>
     <Compile Include="Utils\Start.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="AcceptanceTest\SpecFlowFeature2.feature">
+    <None Include="AcceptanceTest\AddingSameLanguageandSameLanguageLevel.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>SpecFlowFeature2.feature.cs</LastGenOutput>
+      <LastGenOutput>AddingSameLanguageandSameLanguageLevel.feature.cs</LastGenOutput>
     </None>
-    <None Include="AcceptanceTest\SpecFlowFeature3.feature">
+    <None Include="AcceptanceTest\AddingSameLanguageWithDifferntLanguageLevel.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>SpecFlowFeature3.feature.cs</LastGenOutput>
+      <LastGenOutput>AddingSameLanguageWithDifferntLanguageLevel.feature.cs</LastGenOutput>
     </None>
-    <None Include="AcceptanceTest\SpecFlowFeature4.feature">
+    <None Include="AcceptanceTest\AddSkills.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>SpecFlowFeature4.feature.cs</LastGenOutput>
+      <LastGenOutput>AddSkills.feature.cs</LastGenOutput>
     </None>
-    <None Include="AcceptanceTest\SpecFlowFeature5.feature">
+    <None Include="AcceptanceTest\AddEducation.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>SpecFlowFeature5.feature.cs</LastGenOutput>
+      <LastGenOutput>AddEducation.feature.cs</LastGenOutput>
+    </None>
+    <None Include="AcceptanceTest\AddCertification.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AddCertification.feature.cs</LastGenOutput>
+    </None>
+    <None Include="AcceptanceTest\AddDescription.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AddDescription.feature.cs</LastGenOutput>
+    </None>
+    <None Include="AcceptanceTest\DeleteingLanguage.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>DeleteingLanguage.feature.cs</LastGenOutput>
+    </None>
+    <None Include="AcceptanceTest\EditLanguage.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>EditLanguage.feature.cs</LastGenOutput>
+    </None>
+    <None Include="AcceptanceTest\Languages.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Languages.feature.cs</LastGenOutput>
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="AcceptanceTest\SpecFlowFeature1.feature">
+    <None Include="AcceptanceTest\AddLanguage.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>SpecFlowFeature1.feature.cs</LastGenOutput>
+      <LastGenOutput>AddLanguage.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>

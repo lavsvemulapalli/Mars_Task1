@@ -58,43 +58,7 @@ namespace SpecflowTests.AcceptanceTest
             Thread.Sleep(5000);
 
 
- // adding same language (English) with differnt language level
-
-            Driver.driver.FindElement(By.XPath("//div[text()='Add New']")).Click();
-            //Add Language
-            Driver.driver.FindElement(By.XPath("//input[@placeholder='Add Language']")).SendKeys("English");
-            //Click on Language Level
-            Driver.driver.FindElement(By.XPath("//select[@class='ui dropdown']")).Click();
-            Thread.Sleep(2000);
-            //Choose the language level
-            Driver.driver.FindElement(By.XPath("//select[@class='ui dropdown']//following::option[3]")).Click();
-            //Click on Add button
-            Driver.driver.FindElement(By.XPath("//input[@value='Add']")).Click();
-            //handling popup
-            Assert.AreEqual("Duplicated data", Driver.driver.FindElement(By.CssSelector(".ns-box-inner")).Text);
-            Driver.driver.FindElement(By.CssSelector(".ns-close")).Click();
-            Driver.driver.FindElement(By.XPath("//input[@class='ui button' and @value='Cancel']")).Click();
-            Thread.Sleep(5000);
- // adding same language (English) and same language level
-
-            //Click on Add New button
-            Driver.driver.FindElement(By.XPath("//div[text()='Add New']")).Click();
-            //Add Language
-            Driver.driver.FindElement(By.XPath("//input[@placeholder='Add Language']")).SendKeys("English");
-            //Click on Language Level
-            Driver.driver.FindElement(By.XPath("//select[@class='ui dropdown']")).Click();
-            Thread.Sleep(2000);
-            //Choose the language level
-            Driver.driver.FindElement(By.XPath("//select[@class='ui dropdown']//following::option[4]")).Click();
-            //Click on Add button
-            Driver.driver.FindElement(By.XPath("//input[@value='Add']")).Click();
-            //handling popup
-            Assert.AreEqual("This language is already exist in your language list.", Driver.driver.FindElement(By.CssSelector(".ns-box-inner")).Text);
-            Driver.driver.FindElement(By.CssSelector(".ns-close")).Click();
-            Driver.driver.FindElement(By.XPath("//input[@class='ui button' and @value='Cancel']")).Click();
-            Thread.Sleep(3000);
-
-//adding Hindhi language
+ //adding Hindi language
 
             Driver.driver.FindElement(By.XPath("//div[text()='Add New']")).Click();
             //Add Language
@@ -108,30 +72,71 @@ namespace SpecflowTests.AcceptanceTest
             Driver.driver.FindElement(By.XPath("//input[@value='Add']")).Click();
             Thread.Sleep(5000);
 
- //editing telugu language
+            // adding same language (English) with differnt language level
 
-            Driver.driver.FindElement(By.XPath("//td[text()='Fluent']//following::i[1]")).Click();
-            Thread.Sleep(3000);
+            /*Driver.driver.FindElement(By.XPath("//div[text()='Add New']")).Click();
+            //Add Language
+            Driver.driver.FindElement(By.XPath("//input[@placeholder='Add Language']")).SendKeys("English");
+            //Click on Language Level
             Driver.driver.FindElement(By.XPath("//select[@class='ui dropdown']")).Click();
             Thread.Sleep(2000);
             //Choose the language level
-            Driver.driver.FindElement(By.XPath("//select[@class='ui dropdown']//following::option[4]")).Click();
-            Thread.Sleep(1000);
-            //clicking update button
-            Driver.driver.FindElement(By.XPath("//input[@value='Update']")).Click();
-            Thread.Sleep(2000);
-            //verification
-            Assert.AreEqual("Telugu has been updated to your languages", Driver.driver.FindElement(By.CssSelector(".ns-box-inner")).Text);
-            Thread.Sleep(5000);
-
-//deleting Hindhi language
+            Driver.driver.FindElement(By.XPath("//select[@class='ui dropdown']//following::option[3]")).Click();
+            //Click on Add button
+            Driver.driver.FindElement(By.XPath("//input[@value='Add']")).Click();
+            //handling popup
+            Assert.AreEqual("Duplicated data", Driver.driver.FindElement(By.CssSelector(".ns-box-inner")).Text);
+            Driver.driver.FindElement(By.CssSelector(".ns-close")).Click();
+            Driver.driver.FindElement(By.XPath("//input[@class='ui button' and @value='Cancel']")).Click();
+            Thread.Sleep(5000);*/
 
 
-            Driver.driver.FindElement(By.XPath("//td[text()='Hindi']//following::i[2]")).Click();
-            Thread.Sleep(1000);
-            //verification
-            Assert.AreEqual("Hindi has been deleted from your languages", Driver.driver.FindElement(By.CssSelector(".ns-box-inner")).Text);
-            Thread.Sleep(5000);
+
+            // adding same language (English) and same language level
+
+            /*  //Click on Add New button
+              Driver.driver.FindElement(By.XPath("//div[text()='Add New']")).Click();
+              //Add Language
+              Driver.driver.FindElement(By.XPath("//input[@placeholder='Add Language']")).SendKeys("English");
+              //Click on Language Level
+              Driver.driver.FindElement(By.XPath("//select[@class='ui dropdown']")).Click();
+              Thread.Sleep(2000);
+              //Choose the language level
+              Driver.driver.FindElement(By.XPath("//select[@class='ui dropdown']//following::option[4]")).Click();
+              //Click on Add button
+              Driver.driver.FindElement(By.XPath("//input[@value='Add']")).Click();
+              //handling popup
+              Assert.AreEqual("This language is already exist in your language list.", Driver.driver.FindElement(By.CssSelector(".ns-box-inner")).Text);
+              Driver.driver.FindElement(By.CssSelector(".ns-close")).Click();
+              Driver.driver.FindElement(By.XPath("//input[@class='ui button' and @value='Cancel']")).Click();
+              Thread.Sleep(3000);  */
+
+
+
+            //editing telugu language
+
+            /* Driver.driver.FindElement(By.XPath("//td[text()='Fluent']//following::i[1]")).Click();
+             Thread.Sleep(3000);
+             Driver.driver.FindElement(By.XPath("//select[@class='ui dropdown']")).Click();
+             Thread.Sleep(2000);
+             //Choose the language level
+             Driver.driver.FindElement(By.XPath("//select[@class='ui dropdown']//following::option[4]")).Click();
+             Thread.Sleep(1000);
+             //clicking update button
+             Driver.driver.FindElement(By.XPath("//input[@value='Update']")).Click();
+             Thread.Sleep(2000);
+             //verification
+             Assert.AreEqual("Telugu has been updated to your languages", Driver.driver.FindElement(By.CssSelector(".ns-box-inner")).Text);
+             Thread.Sleep(5000);*/
+
+            //deleting Hindhi language
+
+
+            /* Driver.driver.FindElement(By.XPath("//td[text()='Hindi']//following::i[2]")).Click();
+             Thread.Sleep(1000);
+             //verification
+             Assert.AreEqual("Hindi has been deleted from your languages", Driver.driver.FindElement(By.CssSelector(".ns-box-inner")).Text);
+             Thread.Sleep(5000);*/
 
 
 
